@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/metar.png",
+        url: "/og-metar.png",
         width: 1200,
         height: 630,
         alt: "Metar Logo",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Metar | HTTP 402 Protocol for Programmatic APIs",
     description: "Production-ready SDK for pay-per-call APIs using USDC micropayments on Solana.",
-    images: ["/metar.png"],
+    images: ["/og-metar.png"],
   },
 };
 
