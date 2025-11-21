@@ -30,7 +30,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className="text-[68px] leading-[1.1] font-medium text-[#222222] mb-6 tracking-[-0.68px]"
+                            className="text-4xl md:text-[68px] leading-[1.1] font-medium text-[#222222] mb-6 tracking-[-0.68px]"
                         >
                             One Line of Code. <br />
                             Instant API Monetization.
