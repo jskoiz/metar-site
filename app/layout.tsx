@@ -6,27 +6,22 @@ import Navbar from "@/components/Navbar";
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://metar.so"),
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://metar.so"
+  ),
   title: "Metar | HTTP 402 Protocol for Programmatic APIs",
   description: "Production-ready SDK for pay-per-call APIs using USDC micropayments on Solana. Built for AI agents, microservices, and any programmatic client.",
   openGraph: {
     title: "Metar | HTTP 402 Protocol for Programmatic APIs",
     description: "Production-ready SDK for pay-per-call APIs using USDC micropayments on Solana.",
     type: "website",
-    images: [
-      {
-        url: "/og-metar.png",
-        width: 1200,
-        height: 630,
-        alt: "Metar Logo",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Metar | HTTP 402 Protocol for Programmatic APIs",
     description: "Production-ready SDK for pay-per-call APIs using USDC micropayments on Solana.",
-    images: ["/og-metar.png"],
   },
 };
 
